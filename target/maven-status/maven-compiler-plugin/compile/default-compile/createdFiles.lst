@@ -1,0 +1,13 @@
+org\example\ImageSlider.class
+org\example\PrimaryController.class
+module-info.class
+org\example\Calculator\DecCalc.class
+org\example\App.class
+org\example\DataRow.class
+org\example\Clock.class
+org\example\CalculatorController.class
+org\example\Calculator\App.class
+org\example\SecondaryController.class
+org\example\Menubar.class
+org\example\Calculator\HexCalc.class
+org\example\Contacts.class

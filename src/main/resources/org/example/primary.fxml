@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Label layoutX="199.0" layoutY="67.0" prefHeight="44.0" prefWidth="201.0" text="Welcome" textOverrun="WORD_ELLIPSIS">
+         <font><Font name="Broadway" size="36.0" /></font>
+      </Label>
+      <Button fx:id="clockBtn" layoutX="300.0" layoutY="145.0" mnemonicParsing="false" onAction="#clickOnClock" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #DEB887;" text="Clock">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="calcBtn" layoutX="145.0" layoutY="222.0" mnemonicParsing="false" onAction="#clickOnCalc" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #DEB887;" text="Calculator">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="ImageSliderBtn" layoutX="300.0" layoutY="222.0" mnemonicParsing="false" onAction="#clickOnImageSlider" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #DEB887;" text="Image Slider">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="contactsBtn" layoutX="145.0" layoutY="145.0" mnemonicParsing="false" onAction="#clickOnContacts" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #DEB887;" text="Contacts">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

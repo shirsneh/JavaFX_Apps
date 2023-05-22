@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+
+<ToolBar prefWidth="550.0" style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Menubar">
+    <items>
+        <MenuBar prefHeight="26.0" prefWidth="477.0" style="-fx-background-color: #FFE4C4;">
+            <menus>
+                <Menu mnemonicParsing="false" style="-fx-background-color: #FFE4C4;" text="Main page">
+                    <items>
+                        <MenuItem fx:id="mainPageBtn" mnemonicParsing="false" onAction="#pressMainPage" style="-fx-background-color: #DEB887;" text="return to main page" />
+                    </items></Menu>
+                <Menu fx:id="Clock" mnemonicParsing="false" style="-fx-background-color: #FFE4C4;" text="Clock">
+                    <items>
+                        <MenuItem fx:id="GoToClock" mnemonicParsing="false" onAction="#pressClock" style="-fx-background-color: #DEB887;" text="go to clock" />
+                    </items>
+                </Menu>
+                <Menu fx:id="Calculator" mnemonicParsing="false" style="-fx-background-color: #FFE4C4;" text="Calculator">
+                    <items>
+                        <MenuItem fx:id="GoTOCalc" mnemonicParsing="false" onAction="#pressCalc" style="-fx-background-color: #DEB887;" text="go to calculator" />
+                    </items>
+                </Menu>
+                <Menu fx:id="ImageSlide" mnemonicParsing="false" style="-fx-background-color: #FFE4C4;" text="Image Slider">
+                    <items>
+                        <MenuItem fx:id="ShowImages" mnemonicParsing="false" onAction="#pressShowImages" style="-fx-background-color: #DEB887;" text="go to Image slider" />
+                    </items>
+                </Menu>
+            <Menu fx:id="Contacts" mnemonicParsing="false" style="-fx-background-color: #FFE4C4;" text="Contacts">
+               <items>
+                  <MenuItem fx:id="GoTOContacts" mnemonicParsing="false" onAction="#pressContacts" style="-fx-background-color: #DEB887;" text="go to contacts" />
+               </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="exitBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressOnExit" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #DEB887;" text="exit" />
+    </items>
+</ToolBar>

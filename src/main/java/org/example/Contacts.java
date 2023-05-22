@@ -46,11 +46,11 @@ public class Contacts{
         String[] columns = {"first_name", "last_name", "phone", "email"};
         List<DataRow> data = readCSVFile(filename, columns);
 
-            first_name.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getFirst_name()));
-            last_name.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getLast_name()));
-            phone.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getPhone()));
-            email.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getEmail()));
-            contactsTable.setItems(FXCollections.observableList(data));
+        first_name.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getFirst_name()));
+        last_name.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getLast_name()));
+        phone.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getPhone()));
+        email.setCellValueFactory(c -> new SimpleStringProperty(c.getValue().getEmail()));
+        contactsTable.setItems(FXCollections.observableList(data));
     }
 
     public static List<DataRow> readCSVFile(String filename, String[] columns) {

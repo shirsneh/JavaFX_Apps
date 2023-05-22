@@ -39,7 +39,6 @@ public class ImageSlider{
         MenubarPane.getChildren().clear();
         MenubarPane.getChildren().add(menuBarParent);
         try {
-
             images = new Image[numOfImages];
             String filename = "images";
             ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
